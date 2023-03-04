@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  key: MyString
+  kind: MyString
   zip: MyString
   country: MyString
 
 two:
   name: MyString
-  key: MyString
+  kind: MyString
   zip: MyString
   country: MyString

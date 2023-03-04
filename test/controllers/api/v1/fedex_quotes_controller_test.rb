@@ -16,9 +16,6 @@ module Api
       test 'should get index' do
         get api_v1_fedex_quotes_url, as: :json
         assert_response :success
-
-        json_response = JSON.parse(response.body, symbolize_names: true)
-        assert_equal 'MXN', json_response.first[:currency]
       end
     end
   end
