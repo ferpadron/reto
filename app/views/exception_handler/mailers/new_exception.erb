@@ -1,0 +1,16 @@
+<h2>Error <i class="fas fa-angry"></i> <%= @exception.app_name %><br/><small><%= @exception.class_name %></small></h2>
+<strong><u><%= @exception.response %> (<%= @exception.status %>)</u></strong>
+<p><%= @exception.message %></p>
+<%= "referer: #{@exception.referer}" %><br/>
+<%= "url: #{@exception.target}" %><br/>
+<%= "status: #{@exception.status}" %><br/>
+<%= "ip: #{@exception.ip}" %><br/>
+<%= "request_method: #{@exception.request_method}" %><br/>
+<br/>
+<%= "user_agent: #{@exception.user_agent}" %><br/>
+<%= "time: #{Time.now.strftime("%Y-%m-%d %H:%M:%S")}" %><br/>
+<%= "message: #{@exception.message}" %><br/>
+<%= "parameters: #{@exception.params}" %><br/>
+<br/>
+<h3>Details:</h3>
+<%= @exception.trace.split("'").map {|x| x.include?('ruby/') ? x : "<span style='font-weight: bold; color: blue;'>#{x}</span>" }.compact.join("'<br/>").html_safe %>
