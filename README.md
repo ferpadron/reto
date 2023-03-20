@@ -145,6 +145,7 @@ secret_key_base: REPLACE_THIS_STRING_with_your_secret_key_base__f9b9b8e4ae3ba771
   * **country** is the country in two letters of the buyer or recipient of the package.
   * Finally, you can skip any parameter and the application will replace it with a default value.
 ### My personal demonstrations about JSON:API MODULE:
+#### They are inside the controller/controllers/api/v1/clients_controller.rb, in the 'index' method and derivations.
   * [http://localhost:3000/api/v1/clients?page=1&per_page=2&f=name&q=KARLA&order=name](http://localhost:3000/api/v1/clients?page=1&per_page=2&f=name&q=KARLA&order=name)
     * Get clients and their items in the database.
     * Set page, per_page. Response includes links of pagination useful to Frontend side.
