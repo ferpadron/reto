@@ -17,7 +17,7 @@ Any questions you have, please let me know.
 
 Greetings."
 
-### And he gave me two files:
+### And he gave me two files (and no more explanations):
 * [Fedex_SDK_Ruby.pdf](https://github.com/ferpadron/reto/blob/main/docs/Fedex_SDK_Ruby.pdf)
 * [Fedex.postman_collection.json](https://github.com/ferpadron/reto/blob/main/docs/Fedex.postman_collection.json)
 
@@ -136,7 +136,7 @@ secret_key_base: REPLACE_THIS_STRING_with_your_secret_key_base__f9b9b8e4ae3ba771
 ## Next, How to run the application:
 ```rails s```
 
-### To get FedEx quotes using this API, in a browser type [http://localhost:3000](http://localhost:3000)
+### TO GET FEDEX QUOTES using this API (original challenge), in a browser type [http://localhost:3000](http://localhost:3000)
 * This project is prepared to work without parameters. It takes some default values, or 'in a real-life', you can try:
 * [http://localhost:3000/api/v1/fedex_quotes?client_id=1&item_no=2&zip=06500&country=MX](http://localhost:3000/api/v1/fedex_quotes?client_id=1&item_no=2&zip=06500&country=MX)
   * Where **client_id** can be 1 to 4 according db/seeds.file (other value gives error, try it).
@@ -144,25 +144,25 @@ secret_key_base: REPLACE_THIS_STRING_with_your_secret_key_base__f9b9b8e4ae3ba771
   * **zip** is the zip of the buyer or recipient of the package.
   * **country** is the country in two letters of the buyer or recipient of the package.
   * Finally, you can skip any parameter and the application will replace it with a default value.
-### My personal demonstrations about JSON:API module:
+### My personal demonstrations about JSON:API MODULE:
   * [http://localhost:3000/api/v1/clients?page=1&per_page=2&f=name&q=KARLA&order=name](http://localhost:3000/api/v1/clients?page=1&per_page=2&f=name&q=KARLA&order=name)
     * Get clients and their items in the database.
     * Set page, per_page. Response includes links of pagination useful to Frontend side.
     * To filter/search provide parameters 'f' and 'q', where:
-      * f can be one of: ["id", "name", "kind", "zip", "country", "created_at", "updated_at"]
-      * q should be a valid value
-      * The response for this sample: f=zip&q=97000 will be Client: "Sophie Kenneth"
+      * 'f' parameter can be one of: ["id", "name", "kind", "zip", "country", "created_at", "updated_at"]
+      * 'q' parameter should be a valid value
+      * The response for this sample: ```f=zip&q=97000``` will be **Client: "Sophie Kenneth"**
     * And set an order (name, zip, country). If you not set an order ID order is provided.
 ### TEST COVERAGE (Code coverage analysis) through SimpleCov gem
 * Run ```rails test``` from root directory
 * In your Internet browser, type ```file:///<ROOT_DIRECTORY>/coverage/index.html#_AllFiles``` to open the report.
   * In my case: ```file:///Users/fer/projects/ruby3/reto/coverage/index.html#_AllFiles```
-* OR
+* **OR**
   * After running your tests:
-    * In a Mac Terminal, run the following command from your application's root directory:
-      * open coverage/index.html
-    * In a debian/ubuntu Terminal:
-      * xdg-open coverage/index.html
+    * **In a Mac Terminal**, run the following command from your application's root directory:
+      * ```open coverage/index.html```
+    * **In a debian/ubuntu Terminal**:
+      * ```xdg-open coverage/index.html```
 * Browse by clicking on the file names!
 
 ## I'm Fer and I say THANK YOU!
