@@ -1,4 +1,4 @@
-# This project is a mini API containing a service that provides shipping quotes on FedEx. It's a challenge for some job.<br/>Also, and important to me, this is a personal demonstration of the correct use of the JSON:API module, which is a standard in a professional API and almost nobody uses it.
+# This project is a mini API containing a service that provides shipping quotes on FedEx. It's a challenge for some job.<br/>Also, and important to me, this is a personal demonstration of the correct use of the JSON:API module, which is a standard in a professional API and almost nobody uses it.<br/>This project has many of my best practices.
 
 ### The technical recruiter has required:
 "Hello Fernando, Good afternoon.
@@ -44,7 +44,7 @@ Greetings."
 
 * In summary, **this project is a compendium of best practices in creating APIs**.
 
-## Ruby and rails versions:
+## Ruby and Rails versions:
 ```
 ruby 3.1.2p20
 rails 7.0.3
