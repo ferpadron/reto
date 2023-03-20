@@ -1,4 +1,4 @@
-# This project is a mini API containing a service that provides shipping quotes on FedEx. It is a challenge for some job. Also, this is a personal demonstration of the correct use of the JSON:API module, which is a standard in a professional API and almost nobody uses it.
+# This project is a mini API containing a service that provides shipping quotes on FedEx. It's a challenge for some job.<br/>Also, and important to me, this is a personal demonstration of the correct use of the JSON:API module, which is a standard in a professional API and almost nobody uses it.
 
 ### Recruiter has required:
 "Hello Fernando, Good afternoon.
